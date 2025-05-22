@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				accent: {
+					green: '#4ade80',
+				},
+				dark: {
+					100: '#0f1012',
+					200: '#151718',
+					300: '#1a1d1e',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +71,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				mono: ['Fira Code', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +97,30 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				typing: {
+					'0%': { width: '0' },
+					'100%': { width: '100%' }
+				},
+				blink: {
+					'50%': { borderColor: 'transparent' }
+				},
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				typing: 'typing 3.5s steps(30, end)',
+				blink: 'blink 1s step-end infinite',
+				fadeIn: 'fadeIn 1s ease-in-out',
+				float: 'float 3s ease-in-out infinite'
 			}
 		}
 	},
