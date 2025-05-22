@@ -6,36 +6,102 @@ import { Button } from "@/components/ui/button";
 const projectsData = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "Built a full-featured online store with React, Node.js and MongoDB",
+    title: "Taxi Traffic Prediction",
+    description: "College project using Machine Learning to predict taxi traffic patterns",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-    category: "web",
+    category: "college",
     link: "#",
-    client: "FashionRetail Inc.",
-    completionTime: "2 Months",
-    technologies: ["React", "Node.js", "MongoDB", "Redux", "Express"]
+    client: "Final Year Project",
+    completionTime: "2020",
+    technologies: ["Python", "Machine Learning", "AWS Lambda"]
   },
   {
     id: 2,
-    title: "Fitness Tracking App",
-    description: "Developed a mobile app for tracking workouts and nutrition",
+    title: "iClassPro",
+    description: "Professional project for class management and scheduling",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-    category: "mobile",
+    category: "professional",
     link: "#",
-    client: "FitLife",
-    completionTime: "3 Months",
-    technologies: ["React Native", "Firebase", "Redux", "Node.js"]
+    client: "KnackForge",
+    completionTime: "2023",
+    technologies: ["React", "Node.js", "MongoDB"]
   },
   {
     id: 3,
-    title: "Real Estate Dashboard",
-    description: "Created an admin dashboard for property management",
+    title: "iCampPro",
+    description: "Professional project for camp management and registration",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    category: "web",
+    category: "professional",
     link: "#",
-    client: "PropertyPro",
-    completionTime: "2.5 Months",
-    technologies: ["Vue.js", "Express", "PostgreSQL", "Tailwind CSS"]
+    client: "KnackForge",
+    completionTime: "2022",
+    technologies: ["AngularJS", "PHP", "Laravel"]
+  },
+  {
+    id: 4,
+    title: "iRegPro",
+    description: "Registration and management system for institutional use",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    category: "professional",
+    link: "#",
+    client: "KnackForge",
+    completionTime: "2021",
+    technologies: ["React", "Express", "MongoDB"]
+  },
+  {
+    id: 5,
+    title: "Wedding E-invite",
+    description: "Simple wedding e-invitation app with RSVP functionality",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    category: "personal",
+    link: "#",
+    client: "Personal Project",
+    completionTime: "2022",
+    technologies: ["HTML", "JavaScript", "CSS"]
+  },
+  {
+    id: 6,
+    title: "ToDo List",
+    description: "Task management app built with React Native",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    category: "personal",
+    link: "#",
+    client: "Personal Project",
+    completionTime: "2021",
+    technologies: ["React Native", "JavaScript"]
+  },
+  {
+    id: 7,
+    title: "Snappy",
+    description: "Real-time chat web application using MERN stack and socket.io",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    category: "personal",
+    link: "#",
+    client: "Personal Project",
+    completionTime: "2022",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "Socket.io"]
+  },
+  {
+    id: 8,
+    title: "SplitUp",
+    description: "Expense tracker and trip organizing application built with React Native",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+    category: "personal",
+    link: "#",
+    client: "Personal Project",
+    completionTime: "2023",
+    technologies: ["React Native", "JavaScript"]
+  },
+  {
+    id: 9,
+    title: "WeatherMan",
+    description: "Simple weather application using external API",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    category: "personal",
+    link: "#",
+    client: "Personal Project",
+    completionTime: "2022",
+    technologies: ["JavaScript", "API integration", "CSS"]
   }
 ];
 
@@ -53,14 +119,13 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">My Recent <span className="text-accent-green">Works</span></h2>
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            Here are some of my latest projects. I specialize in creating responsive, 
-            user-friendly applications with clean code and modern design.
+            Here are some of my projects spanning professional work, personal projects, and academic endeavors.
           </p>
         </div>
         
         {/* Project Filters */}
         <div className="flex justify-center mb-12">
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap justify-center gap-2">
             <button 
               onClick={() => setActiveFilter("all")}
               className={`px-4 py-2 rounded-lg transition-colors ${
@@ -72,24 +137,34 @@ const Projects = () => {
               All
             </button>
             <button 
-              onClick={() => setActiveFilter("web")}
+              onClick={() => setActiveFilter("professional")}
               className={`px-4 py-2 rounded-lg transition-colors ${
-                activeFilter === "web" 
+                activeFilter === "professional" 
                   ? "bg-accent-green text-black" 
                   : "bg-dark-200 hover:bg-dark-300"
               }`}
             >
-              Web
+              Professional
             </button>
             <button 
-              onClick={() => setActiveFilter("mobile")}
+              onClick={() => setActiveFilter("personal")}
               className={`px-4 py-2 rounded-lg transition-colors ${
-                activeFilter === "mobile" 
+                activeFilter === "personal" 
                   ? "bg-accent-green text-black" 
                   : "bg-dark-200 hover:bg-dark-300"
               }`}
             >
-              Mobile
+              Personal
+            </button>
+            <button 
+              onClick={() => setActiveFilter("college")}
+              className={`px-4 py-2 rounded-lg transition-colors ${
+                activeFilter === "college" 
+                  ? "bg-accent-green text-black" 
+                  : "bg-dark-200 hover:bg-dark-300"
+              }`}
+            >
+              College
             </button>
           </div>
         </div>
@@ -160,7 +235,7 @@ const Projects = () => {
                 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div>
-                    <h4 className="text-sm font-medium text-gray-400 mb-1">Client</h4>
+                    <h4 className="text-sm font-medium text-gray-400 mb-1">Client/Project</h4>
                     <p>{selectedProject.client}</p>
                   </div>
                   <div>
@@ -180,7 +255,7 @@ const Projects = () => {
                 
                 <a href={selectedProject.link} className="inline-block">
                   <Button className="bg-accent-green hover:bg-accent-green/80 text-black">
-                    Live Demo
+                    View Project
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </a>

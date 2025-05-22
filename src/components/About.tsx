@@ -9,22 +9,22 @@ const About = () => {
         <div className="space-y-4 text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">About <span className="text-accent-green">Me</span></h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            I'm a dedicated software engineer with extensive experience in building modern web applications and solving complex technical challenges.
+            A dynamic web developer with 4.9 years of experience, fueled by a passion for innovation and continuous learning.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Software Engineer & <span className="text-accent-green">Full Stack Developer</span></h3>
+            <h3 className="text-2xl font-bold mb-4">Senior Software Developer & <span className="text-accent-green">Full Stack Developer</span></h3>
             <p className="text-gray-400 mb-6">
-              I specialize in building scalable, high-performance web applications using modern JavaScript frameworks
-              and libraries. With expertise in both frontend and backend technologies, I create seamless user experiences
-              that are both beautiful and functional.
+              With a strong background in React, Angular, Laravel and full-stack development, I've thrived on
+              transforming complex challenges into seamless solutions. At KnackForge Soft Solutions, 
+              I've not only delivered high-quality applications but also mentored teams, shared best practices, 
+              and embraced emerging technologies like Node.js, MongoDB, and AWS.
             </p>
             <p className="text-gray-400 mb-6">
-              My approach focuses on writing clean, maintainable code and implementing best practices for security,
-              performance, and accessibility. I'm passionate about staying up-to-date with the latest industry trends
-              and continuously expanding my technical knowledge.
+              Always eager to explore new tech and collaborate across teams, I'm driven by the excitement of
+              learning, adapting, and pushing the boundaries of what's possible.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -32,7 +32,7 @@ const About = () => {
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <span className="text-accent-green mr-2">▹</span>
-                    <span>8+ years experience</span>
+                    <span>4.9+ years experience</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-accent-green mr-2">▹</span>
@@ -40,7 +40,7 @@ const About = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="text-accent-green mr-2">▹</span>
-                    <span>UI/UX Design</span>
+                    <span>React & React Native</span>
                   </li>
                 </ul>
               </div>
@@ -52,11 +52,11 @@ const About = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="text-accent-green mr-2">▹</span>
-                    <span>Responsive Design</span>
+                    <span>Team Mentoring</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-accent-green mr-2">▹</span>
-                    <span>API Development</span>
+                    <span>AWS Services</span>
                   </li>
                 </ul>
               </div>
@@ -75,33 +75,41 @@ const About = () => {
                 <ul className="space-y-4">
                   <li>
                     <div className="text-sm text-gray-400">2016 - 2020</div>
-                    <div className="font-medium">Bachelor's Degree in Computer Science</div>
-                    <div className="text-sm text-gray-400">University of Technology</div>
+                    <div className="font-medium">BE Computer Science and Engineering</div>
+                    <div className="text-sm text-gray-400">SMK FOMRA Institute of Technology</div>
+                    <div className="text-xs text-accent-green">First Class</div>
                   </li>
                   <li>
-                    <div className="text-sm text-gray-400">2020 - 2022</div>
-                    <div className="font-medium">Master's Degree in Web Development</div>
-                    <div className="text-sm text-gray-400">Digital Academy</div>
+                    <div className="text-sm text-gray-400">2014 - 2016</div>
+                    <div className="font-medium">KPUE Board</div>
+                    <div className="text-sm text-gray-400">St.Claret PU College</div>
+                    <div className="text-xs text-accent-green">74%</div>
                   </li>
                 </ul>
               </div>
               
               <div className="bg-dark-200 rounded-lg p-6 border border-dark-300">
-                <h4 className="text-xl font-bold mb-2">Researched</h4>
+                <h4 className="text-xl font-bold mb-2">Languages</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="text-accent-green mr-2">▹</span>
-                    <div>
-                      <div className="text-sm text-gray-400">2023</div>
-                      <div className="font-medium">Built Data Analytics with Data Structures</div>
-                    </div>
+                    <div>English</div>
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent-green mr-2">▹</span>
-                    <div>
-                      <div className="text-sm text-gray-400">2022</div>
-                      <div className="font-medium">Cloud Native Applications and Serverless</div>
-                    </div>
+                    <div>Tamil</div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent-green mr-2">▹</span>
+                    <div>Hindi</div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent-green mr-2">▹</span>
+                    <div>Malayalam</div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent-green mr-2">▹</span>
+                    <div>Kannada</div>
                   </li>
                 </ul>
               </div>
@@ -109,27 +117,27 @@ const About = () => {
             
             <div className="space-y-4">
               <div className="bg-dark-200 rounded-lg p-6 border border-dark-300">
-                <h4 className="text-xl font-bold mb-2">Certifications</h4>
+                <h4 className="text-xl font-bold mb-2">Awards</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="text-accent-green mr-2">▹</span>
                     <div>
                       <div className="text-sm text-gray-400">2022</div>
-                      <div className="font-medium">AWS Certified Developer</div>
+                      <div className="font-medium">Best Performer Q3</div>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent-green mr-2">▹</span>
                     <div>
-                      <div className="text-sm text-gray-400">2021</div>
-                      <div className="font-medium">React Expert</div>
+                      <div className="text-sm text-gray-400">2022</div>
+                      <div className="font-medium">Recognition for React Native App</div>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent-green mr-2">▹</span>
                     <div>
-                      <div className="text-sm text-gray-400">2020</div>
-                      <div className="font-medium">Full Stack Web Development</div>
+                      <div className="text-sm text-gray-400">2022</div>
+                      <div className="font-medium">Good Team Player</div>
                     </div>
                   </li>
                 </ul>
@@ -139,14 +147,19 @@ const About = () => {
                 <h4 className="text-xl font-bold mb-2">Experience</h4>
                 <ul className="space-y-3">
                   <li>
-                    <div className="text-sm text-gray-400">2020 - Present</div>
-                    <div className="font-medium">Senior Full Stack Developer</div>
-                    <div className="text-sm text-accent-green">TechSolutions Inc.</div>
+                    <div className="text-sm text-gray-400">Apr 2024 - Present</div>
+                    <div className="font-medium">Senior Software Developer</div>
+                    <div className="text-sm text-accent-green">KnackForge Soft Solutions</div>
                   </li>
                   <li>
-                    <div className="text-sm text-gray-400">2018 - 2020</div>
-                    <div className="font-medium">Frontend Developer</div>
-                    <div className="text-sm text-accent-green">WebCraft Agency</div>
+                    <div className="text-sm text-gray-400">Apr 2022 - Apr 2024</div>
+                    <div className="font-medium">Software Developer</div>
+                    <div className="text-sm text-accent-green">KnackForge Soft Solutions</div>
+                  </li>
+                  <li>
+                    <div className="text-sm text-gray-400">Jul 2020 - Apr 2022</div>
+                    <div className="font-medium">Associate Software Developer</div>
+                    <div className="text-sm text-accent-green">KnackForge Soft Solutions</div>
                   </li>
                 </ul>
               </div>
